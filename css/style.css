@@ -1,0 +1,400 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+#cabecalho{
+    background: #0079c1;
+    height: 60px;
+    width: 100%;
+}
+
+#cabecalho div{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+img{
+    max-width: 150px;
+    width: auto;
+    padding: 15px 0px;
+}
+
+
+.menu {
+    padding: 15px 0px;
+    align-self: center;
+}
+
+
+.menu ul {
+    display: flex;
+    
+}
+
+.menu ul li{
+   margin: 0 5px;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-size: 15px ;
+    list-style: none;
+    text-decoration: none;   
+    white-space : nowrap;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    color: #fff;
+    padding: 15px 0px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}   
+
+/*------------- main--------------*/
+
+main{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.conteiner{
+    width: 50%;   
+}
+
+/*------------- seção descrição--------------*/
+.conteiner header a{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.conteiner header h1{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+    color: #314163;
+}
+
+.conteiner header h2{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    margin-top: 35px;
+    color: #314163;
+}
+
+.conteiner header h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    margin-top: 30px;
+    color: #314163;
+}
+
+.conteiner header p{
+    font-family: 'PT Serif', serif;
+    font-size: 19px;
+    color: #314163;
+}
+
+.conteiner header h5 p{
+    margin-top: 10px;
+    
+}
+
+/*-------------formulario-------------*/
+
+.conteiner .form{
+    width: 100%;
+    background-color: rgb(213, 252, 248);
+    margin-top: 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+      
+}
+
+.form .div_1{
+    border: #314163 solid 1px;
+    padding: 20px 20px 0px 20px;
+}
+
+.div_1 .div_form{
+    width: 100%; 
+}
+
+.form h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    color: #314163;
+    margin-bottom: 20px;
+}
+
+.form .div_form{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #314163;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.form input{
+    background: transparent;
+}
+
+.div_1 span{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.div_left{
+    flex-grow: 2;
+    margin-right: 15px;
+}
+
+.form .div_left_b button{
+    width: 165px;
+    height: 40px;
+    margin-top: 12px;
+    margin-right: 10px;
+    margin-bottom: 42px;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color:#fff;
+    background-color: rgb(101, 101, 173);
+}
+
+.div_right {
+    flex-grow: 8;
+    
+}
+
+.form .div_right_p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: #314163;
+    margin-top: 40px;
+    
+}
+
+.form .bt_submt{
+    width: 165px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color:#fff;
+    background-color: #314163;
+  
+}
+
+/*-------------backgraund-------------*/
+
+main .bg{
+    min-height: 1440px;
+    height: auto;
+    width: 290px;
+    background-color: #314163;
+    margin-top: 107px;
+    position: relative;
+  
+    
+    
+}
+
+main .bg img{
+   max-width: 100%;
+   max-width: 100%;
+   position: absolute;
+   top: 380px;
+   right: 73px;
+}
+
+footer{
+   
+    background: #0079c1;
+    height: 60px;
+    width: 100%;
+   
+}
+
+
+footer div{
+    width: 70%;
+    margin: 0px auto;
+ 
+    
+}
+
+footer img{
+    max-width: 150px;
+    width: auto;
+    padding: 15px 0px;
+    
+}
+
+@media(max-width: 1300px)
+{
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    .form .div_right_p{
+        font-size: 12px;
+    }
+    
+}
+
+@media(max-width: 1050px)
+{
+    .form .span_bt{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div_1 .span_bt{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .span_bt .div_right_p{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .form .div_left_b button{
+        margin-bottom: 12px;
+    }
+}
+
+
+@media (max-width: 920px){
+
+     /*---------- main  -------------*/
+    
+     .div_1 span{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+
+   
+
+    .div_left{
+        margin-right: 6px;
+      }
+
+    main .bg{ 
+        width:200px;
+   }
+    main .bg img{
+        max-width: 100%;
+        max-width: 100%;
+       
+     }
+ 
+    /*----------- menu -------------*/
+
+    .checkbtn{
+        display:block;
+    }
+
+   
+
+    .menu ul {
+		position: fixed;
+		width: 100%;
+		height: 350px;
+		background: #1d075f;
+		top: 60px;
+		left:-100%;
+        display: flex;	
+        flex-direction: column; 
+        transition: all .5s;
+	}
+
+   
+    .menu ul li{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+		
+    }
+
+    .menu ul li a{
+		font-size: 20px;
+	}
+
+    .menu ul li a:hover, .menu ul li a:active{
+        color: #1d075f;
+        transition: .5s;
+       
+	}  
+
+    #check:checked ~ .menu ul{
+        left: 0;
+    }  
+
+      
+}
+
+@media (max-width: 700px){
+
+    
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .conteiner{
+        width: 100%;
+    }
+
+    main .bg{
+        min-height:240px;
+        width:100%;
+        margin-top: 50px;
+       
+   }
+
+    main .bg img{
+        max-width: 50%;
+        max-width: 50%;
+        top: -150px;
+        right: 0px;
+     }
+    
+    .form span{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .div_left{
+      margin-right: 0px;
+    }
+}
