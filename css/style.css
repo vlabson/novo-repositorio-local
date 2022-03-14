@@ -8,8 +8,11 @@
 
 body{
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
+/*-------------cabeçalho--------------*/
 
 #cabecalho{
     background: #0079c1;
@@ -120,7 +123,7 @@ main{
     
 }
 
-/*-------------formulario-------------*/
+/*-------------secao formulario-------------*/
 
 .conteiner .form{
     width: 100%;
@@ -179,7 +182,6 @@ main{
     margin-top: 12px;
     margin-right: 10px;
     margin-bottom: 42px;
-    
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     color:#fff;
@@ -211,7 +213,7 @@ main{
   
 }
 
-/*-------------backgraund-------------*/
+/*-------------secao backgraund-------------*/
 
 main .bg{
     min-height: 1440px;
@@ -219,19 +221,24 @@ main .bg{
     width: 290px;
     background-color: #314163;
     margin-top: 107px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
   
     
     
 }
 
 main .bg img{
-   max-width: 100%;
-   max-width: 100%;
-   position: absolute;
-   top: 380px;
-   right: 73px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  
+    margin-top: 420px;
+   
 }
+
+/*-------------footer-------------*/
 
 footer{
    
@@ -255,6 +262,8 @@ footer img{
     padding: 15px 0px;
     
 }
+
+/*-------------responsivo-------------*/
 
 @media(max-width: 1300px)
 {
@@ -292,36 +301,18 @@ footer img{
 
 
 @media (max-width: 920px){
-
-     /*---------- main  -------------*/
-    
-     .div_1 span{
-        display: flex;
-        flex-wrap: wrap;
-    }   
-
-   
-
-    .div_left{
-        margin-right: 6px;
-      }
-
-    main .bg{ 
-        width:200px;
-   }
-    main .bg img{
-        max-width: 100%;
-        max-width: 100%;
-       
-     }
  
     /*----------- menu -------------*/
 
+    #cabecalho{
+        position: fixed;
+    }
+ 
     .checkbtn{
         display:block;
+        order: 3 ;
+        
     }
-
-   
 
     .menu ul {
 		position: fixed;
@@ -333,6 +324,7 @@ footer img{
         display: flex;	
         flex-direction: column; 
         transition: all .5s;
+     
 	}
 
    
@@ -354,8 +346,35 @@ footer img{
 	}  
 
     #check:checked ~ .menu ul{
-        left: 0;
+        left: 0;   
     }  
+
+    /*---------- main  -------------*/
+    
+    main{
+        margin-top: 110px;
+    }
+
+    .div_1 span{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+
+   
+
+    .div_left{
+        margin-right: 6px;
+      }
+
+    main .bg{ 
+        width: 200px;
+   }
+    main .bg img{
+        max-width: 80%;
+        max-height: 80%;
+        width: auto;
+        height: auto;
+     }
 
       
 }
@@ -375,7 +394,7 @@ footer img{
     }
 
     main .bg{
-        min-height:240px;
+        min-height: 240px;
         width:100%;
         margin-top: 50px;
        
@@ -384,8 +403,9 @@ footer img{
     main .bg img{
         max-width: 50%;
         max-width: 50%;
-        top: -150px;
+       top: -100px;
         right: 0px;
+        margin-top: 0px;
      }
     
     .form span{
